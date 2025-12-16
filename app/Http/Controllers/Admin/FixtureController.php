@@ -15,7 +15,7 @@ class FixtureController extends Controller
             ->orderBy('match_date')
             ->paginate(20);
 
-        $standings = Standing::with('club')->get();
+        $standings = Standing::with('club')->orderByDesc('points')->get();
 
         $playedMatches = MatchModel::whereNotNull('home_score')
             ->whereNotNull('away_score')

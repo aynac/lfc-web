@@ -3,7 +3,7 @@
         <h2 class="mb-4">Manage Standings</h2>
 
 
-        <a href="{{ route('admin.standing.create') }}" class="btn mb-3" style="background-color:#74c7fe; color:white;">Add Standing</a>
+        <a href="{{ route('standing.create') }}" class="btn mb-3" style="background-color:#74c7fe; color:white;">Add Standing</a>
 
         {{-- Tabs --}}
         <ul class="nav nav-tabs mb-4" id="tabMenu">
@@ -49,10 +49,10 @@
                                     <td>{{ $s->points }}</td>
 
                                     <td class="d-flex gap-1">
-                                        <a href="{{ route('admin.standing.edit', [$s->match_id, $s->id]) }}"
+                                        <a href="{{ route('standing.edit', [$s->match_id, $s->id]) }}"
                                             class="btn btn-sm btn-outline-secondary">Edit</a>
 
-                                        <form action="{{ route('admin.standing.destroy', [$s->match_id, $s->id]) }}"
+                                        <form action="{{ route('standing.destroy', [$s->match_id, $s->id]) }}"
                                             method="POST" class="d-inline-block">
                                             @csrf @method('DELETE')
                                             <button class="btn btn-sm btn-danger"
