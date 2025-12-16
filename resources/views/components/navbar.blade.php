@@ -59,7 +59,7 @@
         transform: translate(-25%, -50%);
         width: 64px;
         height: 64px;
-        background: linear-gradient(135deg, #a8c9f0, #d0e7ff);
+        /* background: linear-gradient(135deg, #a8c9f0, #d0e7ff); */
         /* lightBlue-400 to lightBlue-600 */
         border-radius: 50%;
         filter: blur(12px);
@@ -80,7 +80,6 @@
     .logo-circle {
         width: 60px;
         height: 60px;
-        background-color: #d0e7ff;
         border-radius: 50%;
     }
 
