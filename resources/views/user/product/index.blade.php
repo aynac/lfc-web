@@ -180,7 +180,6 @@
                 });
             });
         });
-
     </script>
 
 </x-app-layout>
