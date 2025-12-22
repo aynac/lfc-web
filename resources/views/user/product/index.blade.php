@@ -57,29 +57,29 @@
 
         {{-- Product Listing --}}
         <div class="row g-4" id="productList">
-            <x-product-card kit="home" image="{{ asset('storage/gallery/jersey/HomeGKFront.png') }}"
+            <x-product-card kit="home" image="{{ asset('gallery/jersey/HomeGKFront.png') }}"
                 title="Home Goal Keeper Jersey" price="$10.00" badge="" :sale="false" :sizes="['S', 'M', 'L', 'XL']"
                 :images="[
-                    asset('storage/gallery/jersey/HomeGKFront.png'),
-                    asset('storage/gallery/jersey/HomeGKBack.png'),
+                    asset('gallery/jersey/HomeGKFront.png'),
+                    asset('gallery/jersey/HomeGKBack.png'),
                 ]" />
-            <x-product-card kit="home" image="{{ asset('storage/gallery/jersey/HomePlayerFront.png') }}"
+            <x-product-card kit="home" image="{{ asset('gallery/jersey/HomePlayerFront.png') }}"
                 title="Home Player Jersey" price="$10.00" badge="" :sale="false" :sizes="['S', 'M', 'L', 'XL']"
                 :images="[
-                    asset('storage/gallery/jersey/HomePlayerFront.png'),
-                    asset('storage/gallery/jersey/HomePlayerBack.png'),
+                    asset('gallery/jersey/HomePlayerFront.png'),
+                    asset('gallery/jersey/HomePlayerBack.png'),
                 ]" />
-            <x-product-card kit="away" image="{{ asset('storage/gallery/jersey/AwayPlayerFront.png') }}"
+            <x-product-card kit="away" image="{{ asset('gallery/jersey/AwayPlayerFront.png') }}"
                 title="Away Player Jersey" price="$10.00" badge="" :sale="false" :sizes="['S', 'M', 'L', 'XL']"
                 :images="[
-                    asset('storage/gallery/jersey/AwayPlayerFront.png'),
-                    asset('storage/gallery/jersey/AwayPlayerBack.png'),
+                    asset('gallery/jersey/AwayPlayerFront.png'),
+                    asset('gallery/jersey/AwayPlayerBack.png'),
                 ]" />
-            <x-product-card kit="away" image="{{ asset('storage/gallery/jersey/AwayGKFront.png') }}"
+            <x-product-card kit="away" image="{{ asset('gallery/jersey/AwayGKFront.png') }}"
                 title="Away Goal Keeper Jersey" price="$10.00" badge="" :sale="false" :sizes="['S', 'M', 'L', 'XL']"
                 :images="[
-                    asset('storage/gallery/jersey/AwayGKFront.png'),
-                    asset('storage/gallery/jersey/AwayGKBack.png'),
+                    asset('gallery/jersey/AwayGKFront.png'),
+                    asset('gallery/jersey/AwayGKBack.png'),
                 ]" />
         </div>
 

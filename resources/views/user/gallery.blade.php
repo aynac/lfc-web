@@ -62,7 +62,7 @@
                             <div class="card overflow-hidden rounded-3"
                                 style="background-color: rgba(173, 216, 230, 0.3);">
                                 <div class="position-relative">
-                                    <img src="{{ Storage::url($image) }}" class="card-img-top img-fluid rounded-3"
+                                    <img src="{{ asset($image) }}" class="card-img-top img-fluid rounded-3"
                                         alt="{{ $category }}">
                                 </div>
                             </div>

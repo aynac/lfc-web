@@ -25,7 +25,7 @@
         <div class="row g-4">
 
             <x-product-card
-                image="{{asset('storage/gallery/jersey/AwayGKfront.png')}}"
+                image="{{asset('gallery/jersey/AwayGKfront.png')}}"
                 title="Away Goal Keeper Jersey"
                 price="$10.00"
                 badge="Hot"
@@ -33,7 +33,7 @@
             />
 
             <x-product-card
-                image="{{asset('storage/gallery/jersey/AwayPlayerFront.png')}}"
+                image="{{asset('gallery/jersey/AwayPlayerFront.png')}}"
                 title="Away Player Jersey"
                 price="$10.00"
                 badge="Hot"
@@ -41,7 +41,7 @@
             />
 
             <x-product-card
-                image="{{asset('storage/gallery/jersey/HomePLayerFront.png')}}"
+                image="{{asset('gallery/jersey/HomePLayerFront.png')}}"
                 title="Home Player Jersey"
                 price="$10.00"
                 badge="Hot"
@@ -49,7 +49,7 @@
             />
 
             <x-product-card
-                image="{{asset('storage/gallery/jersey/HomeGKFront.png')}}"
+                image="{{asset('gallery/jersey/HomeGKFront.png')}}"
                 title="Home Goal Keeper Jersey"
                 price="$10.00"
                 badge="Hot"

@@ -22,7 +22,7 @@
         {{-- New Arrival Product List --}}
         <div class="row g-4">
             <x-product-card
-                image="{{asset('storage/gallery/jersey/HomePlayerFront.png')}}"
+                image="{{asset('gallery/jersey/HomePlayerFront.png')}}"
                 title="Home Player Jersey"
                 price="$10.00"
                 badge="New"

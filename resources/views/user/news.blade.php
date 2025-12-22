@@ -6,7 +6,7 @@
             <section class="position-relative" style="height: 600px; background-color: #111827; overflow:hidden;">
                 <!-- Background Image -->
                 <div class="position-absolute top-0 start-0 w-100 h-100">
-                    <img src="{{ Storage::url('gallery/slide_pic/slide_pic3.webp') }}"
+                    <img src="{{ asset('gallery/slide_pic/slide_pic3.webp') }}"
                         class="w-100 h-100 object-fit-cover" style="opacity: 0.5;" alt="Life FC Wins Championship Title">
                 </div>
 
@@ -95,7 +95,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic2.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic2.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -132,7 +132,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic3.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic3.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -184,7 +184,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic4.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic4.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -221,7 +221,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic5.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic5.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -258,7 +258,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic6.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic6.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -302,7 +302,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic7.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic7.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -343,7 +343,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/slide_pic/slide_pic3.webp') }}"
+                                    <img src="{{ asset('gallery/slide_pic/slide_pic3.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -377,7 +377,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic9.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic9.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">
@@ -420,7 +420,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="card shadow-sm border-0 h-100 hover-shadow">
                                 <div class="ratio ratio-16x9 bg-light overflow-hidden">
-                                    <img src="{{ Storage::url('gallery/news_pic/news_pic10.webp') }}"
+                                    <img src="{{ asset('gallery/news_pic/news_pic10.webp') }}"
                                         class="w-100 h-100 object-fit-cover">
                                 </div>
                                 <div class="card-body">

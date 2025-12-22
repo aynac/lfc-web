@@ -35,14 +35,14 @@
                         {{-- Clubs --}}
                         <div class="d-flex align-items-center gap-3">
                             <div class="d-flex flex-column align-items-center" style="min-width:280px;">
-                                <img src="{{ Storage::url($m->homeClub->logo) }}" width="50" class="rounded-circle">
+                                <img src="{{ asset($m->homeClub->logo) }}" width="50" class="rounded-circle">
                                 <div>{{ $m->homeClub->name }}</div>
                             </div>
 
                             <div>VS</div>
 
                             <div class="d-flex flex-column align-items-center" style="min-width:280px;">
-                                <img src="{{ Storage::url($m->awayClub->logo) }}" width="50" class="rounded-circle">
+                                <img src="{{ asset($m->awayClub->logo) }}" width="50" class="rounded-circle">
                                 <div>{{ $m->awayClub->name }}</div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
 
                         <div class="d-flex align-items-center gap-3">
                             <div class="d-flex flex-column align-items-center" style="min-width:280px;">
-                                <img src="{{ Storage::url($m->homeClub->logo) }}" width="50"
+                                <img src="{{ asset($m->homeClub->logo) }}" width="50"
                                     class="rounded-circle">
                                 <div>{{ $m->homeClub->name }}</div>
                             </div>
@@ -87,7 +87,7 @@
                             <div class="fw-bold">{{ $m->home_score }} - {{ $m->away_score }}</div>
 
                             <div class="d-flex flex-column align-items-center" style="min-width:280px;">
-                                <img src="{{ Storage::url($m->awayClub->logo) }}" width="50"
+                                <img src="{{ asset($m->awayClub->logo) }}" width="50"
                                     class="rounded-circle">
                                 <div>{{ $m->awayClub->name }}</div>
                             </div>

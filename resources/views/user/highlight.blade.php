@@ -16,7 +16,7 @@
                     <!-- Featured Video Card -->
                     <div class="card mb-4 shadow">
                         <div class="ratio ratio-16x9">
-                            <iframe src="{{ Storage::url('gallery/slide_pic/slide_pic3.webp') }}"
+                            <iframe src="{{ asset('gallery/slide_pic/slide_pic3.webp') }}"
                                 title="Life FC | Championship Victory"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
@@ -46,8 +46,6 @@
             </section>
         </div>
     </main>
-
-
 </x-app-layout>
 
 <style>

@@ -45,7 +45,7 @@
 
             <!-- Image -->
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-                <img src="{{ Storage::url('gallery/slide_pic/slide_pic1.webp') }}" alt="Team Celebration"
+                <img src="{{ asset('slide_pic/slide_pic1.webp') }}" alt="Team Celebration"
                     class="img-fluid rounded-3 shadow" style="max-height: 500px; width: 100%; object-fit: cover;">
             </div>
 

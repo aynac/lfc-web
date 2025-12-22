@@ -76,7 +76,7 @@
 
                                             {{-- Home club  --}}
                                             <div class="d-flex flex-column align-items-center" style="min-width:250px;">
-                                                <img src="{{ $m->homeClub->logo ? Storage::url($m->homeClub->logo) : asset('images/placeholder.png') }}"
+                                                <img src="{{ $m->homeClub->logo ? asset($m->homeClub->logo) : asset('images/placeholder.png') }}"
                                                     class="rounded-circle" width="55">
                                                 <div class="fw-semibold mt-2 text-center" style="white-space: nowrap;">{{ $m->homeClub->name }}</div>
                                             </div>
@@ -92,7 +92,7 @@
                                             
                                             {{-- away club  --}}
                                             <div class="d-flex flex-column align-items-center" style="min-width:280px;">
-                                                <img src="{{ $m->awayClub->logo ? Storage::url($m->awayClub->logo) : asset('images/placeholder.png') }}"
+                                                <img src="{{ $m->awayClub->logo ? asset($m->awayClub->logo) : asset('images/placeholder.png') }}"
                                                     class="rounded-circle" width="55">
                                                 <div class="fw-semibold mt-2 text-center" style="white-space: nowrap;">{{ $m->awayClub->name }}</div>
                                             </div>
@@ -130,7 +130,7 @@
                                         <div class="col-8 d-flex justify-content-center align-items-center gap-4">
                                             {{-- Home club Score  --}}
                                             <div class="d-flex flex-column align-items-center" style="min-width:250px;">
-                                                <img src="{{ $m->homeClub->logo ? Storage::url($m->homeClub->logo) : asset('images/placeholder.png') }}"
+                                                <img src="{{ $m->homeClub->logo ? asset($m->homeClub->logo) : asset('images/placeholder.png') }}"
                                                     class="rounded-circle" width="55">
                                                 <div class="fw-semibold mt-2 text-center" style="white-space: nowrap;">{{ $m->homeClub->name }}</div>
                                             </div>
@@ -140,7 +140,7 @@
 
                                             {{-- away club score  --}}
                                             <div class="d-flex flex-column align-items-center" style="min-width:250px;">
-                                                <img src="{{ $m->awayClub->logo ? Storage::url($m->awayClub->logo) : asset('images/placeholder.png') }}"
+                                                <img src="{{ $m->awayClub->logo ? asset($m->awayClub->logo) : asset('images/placeholder.png') }}"
                                                     class="rounded-circle" width="55">
                                                 <div class="fw-semibold mt-2 text-center" style="white-space: nowrap;">{{ $m->awayClub->name }}</div>
                                             </div>

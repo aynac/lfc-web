@@ -2,7 +2,7 @@
     <x-hero-section />  
 
     <x-about-us />
-
+    
     <x-ticket-section />
 
     <x-trending-jersey />

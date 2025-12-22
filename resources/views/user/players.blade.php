@@ -20,49 +20,49 @@
                     <x-player-card
                         name="Khem Leangkhe"
                         number="09"
-                        image="{{asset('storage/gallery/players/09.png')}}"
+                        image="{{asset('gallery/players/09.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 12  --}}
                     <x-player-card
                         name="Kour Sopheak"
                         number="12"
-                        image="{{asset('storage/gallery/players/12.png')}}"
+                        image="{{asset('gallery/players/12.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 17  --}}
                     <x-player-card
                         name="Kea Piseth"
                         number="17"
-                        image="{{asset('storage/gallery/players/17.png')}}"
+                        image="{{asset('gallery/players/17.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 19  --}}
                     <x-player-card
                         name="Kim JoungWoo"
                         number="19"
-                        image="{{asset('storage/gallery/players/19.png')}}"
+                        image="{{asset('gallery/players/19.png')}}"
                         country="🇰🇷 South Korea"
                     />
                     {{-- 99  --}}
                     <x-player-card
                         name="Yen Makara"
                         number="99"
-                        image="{{asset('storage/gallery/players/99.png')}}"
+                        image="{{asset('gallery/players/99.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 11  --}}
                     <x-player-card
                         name="Kim HyeonSu"
                         number="11"
-                        image="{{asset('storage/gallery/players/11.png')}}"
+                        image="{{asset('gallery/players/11.png')}}"
                         country="🇰🇷 South Korea"
                     />
                     {{-- 30  --}}
                     <x-player-card
                         name="Chan Meta"
                         number="30"
-                        image="{{asset('storage/gallery/players/30.png')}}"
+                        image="{{asset('gallery/players/30.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                 </div>
@@ -82,21 +82,21 @@
                     <x-player-card
                         name="Le Songpov"
                         number="08"
-                        image="{{asset('storage/gallery/players/08.png')}}"
+                        image="{{asset('gallery/players/08.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 13  --}}
                     <x-player-card
                         name="Asami Kanta"
                         number="13"
-                        image="{{asset('storage/gallery/players/13.png')}}"
+                        image="{{asset('gallery/players/13.png')}}"
                         country="🇯🇵 Japan"
                     />
                     {{-- 36  --}}
                     <x-player-card
                         name="Vi Chandara"
                         number="36"
-                        image="{{asset('storage/gallery/players/36.png')}}"
+                        image="{{asset('gallery/players/36.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                 </div>
@@ -116,21 +116,21 @@
                     <x-player-card
                         name="Uk Devin"
                         number="20"
-                        image="{{asset('storage/gallery/players/20.png')}}"
+                        image="{{asset('gallery/players/20.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 27  --}}
                     <x-player-card
                         name="Hak Vuthy"
                         number="27"
-                        image="{{asset('storage/gallery/players/27.png')}}"
+                        image="{{asset('gallery/players/27.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 66 --}}
                     <x-player-card
                         name="Vann Vit"
                         number="66"
-                        image="{{asset('storage/gallery/players/66.png')}}"
+                        image="{{asset('gallery/players/66.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                 </div>
@@ -150,14 +150,14 @@
                     <x-player-card
                         name="Lon Vanthana"
                         number="01"
-                        image="{{asset('storage/gallery/players/01.png')}}"
+                        image="{{asset('gallery/players/01.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                     {{-- 22  --}}
                     <x-player-card
                         name="Rong Chongmieng"
                         number="22"
-                        image="{{asset('storage/gallery/players/22.png')}}"
+                        image="{{asset('gallery/players/22.png')}}"
                         country="🇰🇭 Cambodia"
                     />
                 </div>
