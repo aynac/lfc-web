@@ -7,7 +7,7 @@
             <div class="col-md-6 col-lg-3">
                 <div class="d-flex align-items-center mb-3">
                     <div class="logo-circle d-flex align-items-center justify-content-center">
-                        <img src="{{ Storage::url('lfc_logo.webp') }}" alt="Life FC Logo" class="img-fluid"
+                        <img src="{{ asset('lfc_logo.webp') }}" alt="Life FC Logo" class="img-fluid"
                             style="width: 90%; height: auto;">
                     </div>
                     <span class="fw-semibold fs-5 ms-3">Life Football Club</span>
@@ -78,7 +78,7 @@
 
                 <div class="d-flex gap-2">
 
-                    <!-- FB -->
+                    <!-- Facebook -->
                     <a href="https://www.facebook.com/share/16dvuWYyRF/?mibextid=wwXIfr#"
                         class="d-flex align-items-center justify-content-center rounded"
                         style="width: 42px; height: 42px; background: #334155; transition: .3s;"
