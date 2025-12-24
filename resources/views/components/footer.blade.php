@@ -1,4 +1,4 @@
-<footer class="text-white mt-auto" style="background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);">
+<footer class="text-white mt-auto" style="background: linear-gradient(to bottom right, #d0e7ff, #7dcaf9, #d0e7ff);">
     <div class="container py-5">
 
         <div class="row gy-4 mb-5">
@@ -12,7 +12,7 @@
                     </div>
                     <span class="fw-semibold fs-5 ms-3">Life Football Club</span>
                 </div>
-                <p class="text-secondary small">
+                <p class="text-dark small">
                     Excellence in every match. Join us on our journey to greatness
                     and become part of our legacy.
                 </p>
@@ -22,11 +22,11 @@
             <div class="col-md-6 col-lg-3">
                 <h5 class="fw-semibold mb-3">Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a class="text-secondary small text-decoration-none" href="/home">Home</a></li>
-                    <li class="mb-2"><a class="text-secondary small text-decoration-none" href="/store">Store</a>
+                    <li class="mb-2"><a class="text-dark small text-decoration-none" href="/home">Home</a></li>
+                    <li class="mb-2"><a class="text-dark small text-decoration-none" href="/store">Store</a>
                     </li>
-                    <li class="mb-2"><a class="text-secondary small text-decoration-none" href="/news">News</a></li>
-                    <li class="mb-2"><a class="text-secondary small text-decoration-none" href="/players">Players</a>
+                    <li class="mb-2"><a class="text-dark small text-decoration-none" href="/news">News</a></li>
+                    <li class="mb-2"><a class="text-dark small text-decoration-none" href="/players">Players</a>
                     </li>
                 </ul>
             </div>
@@ -34,7 +34,7 @@
             <!-- Contact -->
             <div class="col-md-6 col-lg-3">
                 <h5 class="fw-semibold mb-3">Contact Us</h5>
-                <ul class="list-unstyled small text-secondary">
+                <ul class="list-unstyled small text-dark">
 
                     <li class="d-flex mb-3">
                         <svg width="44" height="34" stroke="#60a5fa" fill="none" stroke-width="2"
@@ -153,15 +153,15 @@
 
                 </div>
 
-                <p class="text-secondary small mt-3">
+                <p class="text-dark small mt-3">
                     Stay connected with us for the latest updates and exclusive content.
                 </p>
             </div>
 
         </div>
 
-        <div class="pt-4 border-top border-secondary text-center">
-            <p class="text-secondary small mb-0">
+        <div class="pt-4 border-top border-dark text-center">
+            <p class="text-dark small mb-0">
                 All rights reserved Life Football Club © 2025
             </p>
         </div>

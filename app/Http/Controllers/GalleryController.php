@@ -19,7 +19,7 @@ class GalleryController extends Controller
         $gallery = [];
 
         foreach ($categories as $key => $path) {
-            $files = Storage::disk('public')->allFiles($path);
+            $files = array_map(fn($file) => asset("storage/{$file}"), Storage::disk('public')->allFiles($path));
             // filter out non-images like .DS_Store
             $gallery[$key] = array_filter($files, fn($file) => preg_match('/\.(jpe?g|png|webp|gif)$/i', $file));
         }

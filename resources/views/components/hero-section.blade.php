@@ -3,7 +3,7 @@
     <!-- Background Image + Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100"
         style="
-             background: url('{{ asset('slide_pic/slide_pic3.webp') }}') center/cover no-repeat;
+             background: url('{{ asset('stadium.jpg') }}') center/cover no-repeat;
              background-size: cover;
              background-position: center;
              background-attachment: fixed;
