@@ -11,7 +11,12 @@ class FixtureController extends Controller
     public function index()
     {
         $matches = MatchModel::with(['homeClub','awayClub'])
-                ->orderBy('match_date', 'asc')
+                ->orderBy('match_date', 'desc')
+                ->get();
+
+        $results = MatchModel::with(['homeClub','awayClub'])
+                ->where('status', 'played')
+                ->orderBy('match_date', 'desc')
                 ->get();
 
         $standings = Standing::with('club')
@@ -19,6 +24,6 @@ class FixtureController extends Controller
                     ->orderByDesc('gd')
                     ->get();
 
-        return view('user.fixture', compact('matches', 'standings'));
+        return view('user.fixture', compact('matches','results', 'standings'));
     }
 }
