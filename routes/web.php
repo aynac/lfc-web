@@ -31,7 +31,6 @@ Route::get('/gallery', [GalleryController::class, 'gallery'])->name('gallery');
 //* User / Guest routes
 Route::prefix('user')->name('user.')->group(function () {
     Route::get('/fixture', [UserFixtureController::class, 'index'])->name('fixture.index');
-    Route::get('/fixture/{match}', [UserFixtureController::class, 'show'])->name('fixture.show');
 });
 
 //* User Product 
@@ -72,7 +71,7 @@ Route::middleware(['auth', 'role:admin'])->group(function(){
             Route::delete('/{fixture}', [AdminFixtureController::class, 'destroy'])->name('destroy');
             
             Route::get('/result', [AdminFixtureController::class, 'result'])->name('result');
-            Route::post('/result', [AdminFixtureController::class, 'result'])->name('storeResult');
+            Route::post('/result', [AdminFixtureController::class, 'storeResult'])->name('storeResult');
         });
 
 

@@ -10,7 +10,7 @@
                         <img src="{{ asset('lfc_logo.webp') }}" alt="Life FC Logo" class="img-fluid"
                             style="width: 90%; height: auto;">
                     </div>
-                    <span class="fw-semibold fs-5 ms-3">Life Football Club</span>
+                    <span class="fw-semibold fs-5 ms-3" style="color : black;">Life Football Club</span>
                 </div>
                 <p class="text-dark small">
                     Excellence in every match. Join us on our journey to greatness
@@ -20,7 +20,7 @@
 
             <!-- Quick Links -->
             <div class="col-md-6 col-lg-3">
-                <h5 class="fw-semibold mb-3">Quick Links</h5>
+                <h5 class="fw-semibold mb-3" style="color :black;">Quick Links</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2"><a class="text-dark small text-decoration-none" href="/home">Home</a></li>
                     <li class="mb-2"><a class="text-dark small text-decoration-none" href="/store">Store</a>
@@ -33,7 +33,7 @@
 
             <!-- Contact -->
             <div class="col-md-6 col-lg-3">
-                <h5 class="fw-semibold mb-3">Contact Us</h5>
+                <h5 class="fw-semibold mb-3" style="color : black;">Contact Us</h5>
                 <ul class="list-unstyled small text-dark">
 
                     <li class="d-flex mb-3">
@@ -74,14 +74,14 @@
 
             <!-- Social -->
             <div class="col-md-6 col-lg-3">
-                <h5 class="fw-semibold mb-3">Follow Us</h5>
+                <h5 class="fw-semibold mb-3" style="color: black;">Follow Us</h5>
 
                 <div class="d-flex gap-2">
 
                     <!-- Facebook -->
                     <a href="https://www.facebook.com/share/16dvuWYyRF/?mibextid=wwXIfr#"
                         class="d-flex align-items-center justify-content-center rounded"
-                        style="width: 42px; height: 42px; background: #334155; transition: .3s;"
+                        style="width: 42px; height: 42px; background: #37568063; transition: .3s;"
                         onmouseover="this.style.background='#3b82f6'; this.style.transform='scale(1.12)'"
                         onmouseout="this.style.background='#334155'; this.style.transform='scale(1)'">
                         <svg width="28" height="26" stroke="currentColor" fill="none" stroke-width="2">
@@ -93,7 +93,7 @@
 
                     <!-- Telegram -->
                     <a href="https://t.me/lifefc_shv" class="d-flex align-items-center justify-content-center rounded"
-                        style="width: 42px; height: 42px; background: #334155; transition: .3s;"
+                        style="width: 42px; height: 42px; background: #37568063; transition: .3s;"
                         onmouseover="this.style.background='#3b82f6'; this.style.transform='scale(1.12)'"
                         onmouseout="this.style.background='#334155'; this.style.transform='scale(1)'">
                         <svg width="24" height="26" fill="currentColor">
@@ -107,7 +107,7 @@
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/lifefc_shv?igsh=cHFsaHJreDFnaDRi"
                         class="d-flex align-items-center justify-content-center rounded"
-                        style="width: 42px; height: 42px; background: #334155; transition: .3s;"
+                        style="width: 42px; height: 42px; background: #37568063; transition: .3s;"
                         onmouseover="this.style.background='#3b82f6'; this.style.transform='scale(1.12)'"
                         onmouseout="this.style.background='#334155'; this.style.transform='scale(1)'">
 
@@ -124,7 +124,7 @@
                     <!-- Youtube -->
                     <a href="https://m.youtube.com/@LIFEFC_SHV"
                         class="d-flex align-items-center justify-content-center rounded"
-                        style="width: 42px; height: 42px; background: #334155; transition: .3s;"
+                        style="width: 42px; height: 42px; background: #37568063; transition: .3s;"
                         onmouseover="this.style.background='#3b82f6'; this.style.transform='scale(1.12)'"
                         onmouseout="this.style.background='#334155'; this.style.transform='scale(1)'">
                         <svg width="28" height="20" stroke="currentColor" fill="none" stroke-width="2">
@@ -141,7 +141,7 @@
                     {{-- LinkedIn --}}
                     <a href="https://www.linkedin.com/company/life-football-club/"
                         class="d-flex align-items-center justify-content-center rounded"
-                        style="width: 42px; height: 42px; background: #334155; transition: .3s;"
+                        style="width: 42px; height: 42px; background: #37568063; transition: .3s;"
                         onmouseover="this.style.background='#3b82f6'; this.style.transform='scale(1.12)'"
                         onmouseout="this.style.background='#334155'; this.style.transform='scale(1)'">
                         <svg width="22" height="22" fill="currentColor">

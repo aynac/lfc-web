@@ -12,24 +12,25 @@
             </div>
         @endif
 
-        <form action="{{ route('standing.update', $standing->id) }}" method="POST">
+        <form action="{{ route('standing.update', $standing) }}" method="POST">
             @csrf
             @method('PUT')
 
-            {{-- Match ID --}}
-            <div class="mb-3"> <label class="form-label">Match ID</label> <input type="number" name="match_id"
-                    class="form-control" value="{{ old('match_id', $standing->match_id) }}"> </div>
+            {{-- Match Info (readonly) --}}
+            <div class="mb-3">
+                <label class="form-label">Match</label>
+                <input type="text" class="form-control"
+                    value="{{ $standing->match ? $standing->match->competition . ' | ' . $standing->match->match_date->format('d M Y H:i') : 'N/A' }}"
+                    disabled>
+                <input type="hidden" name="match_id" value="{{ $standing->match_id }}">
+            </div>
 
-            {{-- Club --}}
+            {{-- Club Info (readonly) --}}
             <div class="mb-3">
                 <label class="form-label">Club</label>
-                <select name="club_id" class="form-control">
-                    @foreach ($clubs as $club)
-                        <option value="{{ $club->id }}" {{ $club->id == $standing->club_id ? 'selected' : '' }}>
-                            {{ $club->name }}
-                        </option>
-                    @endforeach
-                </select>
+                <input type="text" class="form-control" value="{{ $standing->club ? $standing->club->name : 'N/A' }}"
+                    disabled>
+                <input type="hidden" name="club_id" value="{{ $standing->club_id }}">
             </div>
 
             {{-- Stats --}}
@@ -41,6 +42,7 @@
                     'loss' => 'Loss',
                     'gf' => 'GF',
                     'ga' => 'GA',
+                    'gd' => 'GD',
                     'points' => 'Points',
                 ];
             @endphp
@@ -53,23 +55,8 @@
                 </div>
             @endforeach
 
-            {{-- Competition --}}
-            <div class="mb-3">
-                <label class="form-label">Competition</label>
-                <input type="text" name="competition" class="form-control"
-                    value="{{ old('competition', $standing->competition) }}">
-            </div>
-
-            {{-- Season --}}
-            <div class="mb-3">
-                <label class="form-label">Season</label>
-                <input type="text" name="season" class="form-control"
-                    value="{{ old('season', $standing->season) }}">
-            </div>
-
             <button type="submit" class="btn btn-primary">Update Standing</button>
             <a href="{{ route('standing.index') }}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
-
 </x-app-layout>

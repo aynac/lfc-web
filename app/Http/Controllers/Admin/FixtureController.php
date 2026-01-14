@@ -10,18 +10,23 @@ use Illuminate\Http\Request;
 
 class FixtureController extends Controller
 {
-    public function index() {
+    public function index(Request $request) 
+    {
+        $tab = $request->get('tab', 'fixtures');
+
         $fixtures = MatchModel::with(['homeClub','awayClub'])
             ->orderBy('match_date')
             ->paginate(20);
 
         $standings = Standing::with('club')->orderByDesc('points')->get();
 
-        $playedMatches = MatchModel::whereNotNull('home_score')
+        $playedMatches = MatchModel::with(['homeClub', 'awayClub'])
+            ->whereNotNull('home_score')
             ->whereNotNull('away_score')
+            ->orderByDesc('match_date')
             ->get();
 
-        return view('admin.fixture.index', compact('fixtures', 'standings', 'playedMatches'));
+        return view('admin.fixture.index', compact('fixtures', 'standings', 'playedMatches', 'tab'));
     }
 
     public function create() {
@@ -66,14 +71,14 @@ class FixtureController extends Controller
         //     // call a service or logic to update standings (not shown here)
         // }
 
-        return redirect()->route('admin.fixture.index')->with('success','Fixture updated.');
+        return redirect()->route('fixture.index')->with('success','Fixture updated.');
     }
 
     public function destroy($id)
     {
         $match = MatchModel::findOrFail($id);
         $match->delete();
-        return redirect()->route('admin.fixture.index')
+        return redirect()->route('fixture.index')
                         ->with('success', 'Fixture deleted successfully');
     }
 
@@ -90,14 +95,24 @@ class FixtureController extends Controller
 
     public function storeResult(Request $request)
     {
-
-        MatchModel::find($request->match_id)->update([
-            'home_score' => $request->home_score,
-            'away_score' => $request->away_score,
-            'status' => $request->status,
-            'notes' => $request->notes,
+        $data = $request->validate([
+            'match_id' => 'required|exists:matches,id',
+            'home_score' => 'required|integer|min:0',
+            'away_score' => 'required|integer|min:0',
+            'status' => 'required|in:played,cancelled',
+            'notes' => 'nullable|string',
         ]);
-        return redirect()->route('admin.fixture.index', ['tab' => 'results'])
-                 ->with('success', 'Result saved!');
+
+        $match = MatchModel::findOrFail($data['match_id']);
+        $match->update([
+            'home_score' => $data['home_score'],
+            'away_score' => $data['away_score'],
+            'status' => $data['status'],
+            'notes' => $data['notes'] ?? null,
+        ]);
+
+        return redirect()
+            ->route('fixture.index', ['tab' => 'results'])
+            ->with('success', 'Result saved successfully!');
     }
 }

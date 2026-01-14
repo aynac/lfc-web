@@ -53,8 +53,7 @@ class StandingController extends Controller
     public function update(Request $request, Standing $standing)
     {
         $data = $request->validate([
-            'match_id' => 'required|exists:matches,id',
-            'club_id' => 'required|exists:clubs,id',
+            'played' => 'nullable|integer|min:0',
             'win' => 'nullable|integer|min:0',
             'draw' => 'nullable|integer|min:0',
             'loss' => 'nullable|integer|min:0',
@@ -66,12 +65,12 @@ class StandingController extends Controller
 
         $standing->update($data);
 
-        return redirect()->route('admin.standing.index')->with('success', 'Standing updated.');
+        return redirect()->route('standing.index')->with('success', 'Standing updated.');
     }
 
     public function destroy(Standing $standing)
     {
         $standing->delete();
-        return redirect()->route('admin.standing.index')->with('success', 'Standing deleted.');
+        return redirect()->route('standing.index')->with('success', 'Standing deleted.');
     }
 }

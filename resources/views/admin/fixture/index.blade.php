@@ -6,7 +6,7 @@
         <a id="dynamicButton" href="{{ route('fixture.create') }}" class="btn mb-3" style="background-color:#74c7fe ">Create Fixture</a>
 
         {{-- Tabs --}}
-        <ul class="nav nav-tabs mb-4" id="tabMenu">
+        {{-- <ul class="nav nav-tabs mb-4" id="tabMenu">
             <li class="nav-item">
                 <a class="nav-link active text-primary fw-bold" data-tab="fixtures" href="#">Fixtures</a>
             </li>
@@ -16,12 +16,35 @@
             <li class="nav-item">
                 <a class="nav-link text-secondary" data-tab="standings" href="#">Standings</a>
             </li>
+        </ul> --}}
+        <ul class="nav nav-tabs mb-4" id="tabMenu">
+            <li class="nav-item">
+                <a class="nav-link {{ $tab === 'fixtures' ? 'active text-primary fw-bold' : 'text-secondary' }}"
+                data-tab="fixtures" href="#">
+                    Fixtures
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ $tab === 'results' ? 'active text-primary fw-bold' : 'text-secondary' }}"
+                data-tab="results" href="#">
+                    Results
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ $tab === 'standings' ? 'active text-primary fw-bold' : 'text-secondary' }}"
+                data-tab="standings" href="#">
+                    Standings
+                </a>
+            </li>
         </ul>
+
 
         <div id="tabContent">
 
             {{-- FIXTURES TAB --}}
-            <div id="fixtures" class="tab-section">
+            {{-- <div id="fixtures" class="tab-section"> --}}
+            <div id="fixtures" class="tab-section {{ $tab !== 'fixtures' ? 'd-none' : '' }}">
+
                 @foreach ($fixtures as $m)
                     <div
                         class="card mb-2 p-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -69,7 +92,7 @@
             </div>
 
             {{-- RESULTS TAB --}}
-            <div id="results" class="tab-section d-none">
+            <div id="results" class="tab-section {{ $tab === 'results' ? '' : 'd-none' }}">
                 @foreach ($playedMatches as $m)
                     <div
                         class="card mb-2 p-3 d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -134,10 +157,10 @@
                                     <td>{{ $s->points }}</td>
 
                                     <td>
-                                        <a href="{{ route('standing.edit', [$s->match_id, $s->id]) }}"
+                                        <a href="{{ route('standing.edit', $s) }}"
                                             class="btn btn-sm btn-outline-secondary">Edit</a>
 
-                                        <form action="{{ route('standing.destroy', [$s->match_id, $s->id]) }}"
+                                        <form action="{{ route('standing.destroy', $s) }}"
                                             method="POST" class="d-inline-block">
                                             @csrf @method('DELETE')
                                             <button class="btn btn-sm btn-danger">Delete</button>
@@ -152,7 +175,6 @@
                             @endforelse
                         </tbody>
                     </table>
-
                 </div>
             </div>
 
