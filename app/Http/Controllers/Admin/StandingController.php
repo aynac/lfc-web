@@ -34,7 +34,7 @@ class StandingController extends Controller
             'loss' => 'nullable|integer|min:0',
             'gf' => 'nullable|integer|min:0',
             'ga' => 'nullable|integer|min:0',
-            'gd' => 'nullable|integer|min:0',
+            'gd' => 'nullable|integer',
             'points' => 'required|integer|min:0',
         ]);
 
@@ -59,7 +59,7 @@ class StandingController extends Controller
             'loss' => 'nullable|integer|min:0',
             'gf' => 'nullable|integer|min:0',
             'ga' => 'nullable|integer|min:0',
-            'gd' => 'nullable|integer|min:0',
+            'gd' => 'nullable|integer',
             'points' => 'required|integer|min:0',
         ]);
 
