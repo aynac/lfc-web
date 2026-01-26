@@ -36,8 +36,8 @@
                            display:inline-flex;
                            align-items:center;
                            gap:0.25rem;
-                           width:95px;">
-                    🔥 On Sale
+                           width: 70px;">
+                    On Sale
                 </span>
             @endif
         </div>
