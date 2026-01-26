@@ -48,7 +48,7 @@ class FixtureController extends Controller
             'season' => 'nullable|string',
         ]);
         MatchModel::create($data);
-        return redirect()->route('admin.fixture.index')->with('success','Fixture created.');
+        return redirect()->route('fixture.index')->with('success','Fixture created.');
     }
 
     public function edit(MatchModel $fixture) {
